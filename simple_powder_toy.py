@@ -98,7 +98,6 @@ while not done:
                     circle_size -= 1
                 powder_amount = round(circle_size * POWDER_DENSITY)
                 
-            
         if event.type == pygame.MOUSEBUTTONUP and event.button == 1:
             drop_powder = False
     if done:
