@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include <chrono>
 #include <random>
-#include <list>
+#include <vector>
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 using namespace std;
@@ -22,7 +22,7 @@ const sf::Color BLACK = sf::Color::Black;
 const sf::Color WHITE = sf::Color::White;
 sf::VertexArray vertices(sf::Points, CANVAS_SIZE_X * CANVAS_SIZE_Y);
 class Powder;
-list<Powder> powder_list;
+vector<Powder> powder_list;
 sf::RenderWindow window(sf::VideoMode(CANVAS_SIZE_X, CANVAS_SIZE_Y, 24U), "simple powder toy", sf::Style::Close | sf::Style::Titlebar);
 
 class Powder
